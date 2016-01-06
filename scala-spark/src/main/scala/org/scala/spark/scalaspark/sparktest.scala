@@ -9,7 +9,7 @@ object sparktest {
     val conf = new SparkConf()
       .setAppName("sparktest")
       .setMaster("local")
-    val sc = new SparkContext(conf)
+    val sc = new SparkContext(conf)  
     
     //Read some example file to a test RDD
     val fileholder = sc.textFile("c://study/spark/spark1.6/README.md")
